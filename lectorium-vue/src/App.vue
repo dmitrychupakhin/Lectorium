@@ -1,42 +1,100 @@
 <template>
-  <div>
-
-    <input type="file" @change="handleFileUpLoad" />
-    <button click="upLoadFile">Загрузить</button>
-  </div>
+  <my-navbar></my-navbar>
+  <router-view/>
 </template>
 
-<script>
-import axios from 'axios';
-export default {
-  data() {
-    return {
-      file: null
-    };
-  },
-  methods: {
-    handleFileUpload(event) {
-      this.file = event.target.files[0];
-    },
-    uploadFile() {
-      const formData = new FormData();
-      formData.append('file', this.file);
-
-      axios.post('http://example.com/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      })
-        .then(response => {
-          console.log('File uploaded successfully:', response.data);
-          // Дополнительная обработка ответа, если требуется
-        })
-        .catch(error => {
-          console.error('Error uploading file:', error);
-        });
-    }
-  },
+<style>
+#app {
+  display: grid;
 }
-</script>
 
-<style></style>
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+</style>

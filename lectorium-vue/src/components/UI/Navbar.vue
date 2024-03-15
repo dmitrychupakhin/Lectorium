@@ -1,8 +1,8 @@
 <template>
   <div class="navbar">
-    <div class="logo">Lectorium</div>
+    <button class="navbar__btn logo" @click="$router.push({ name: 'home' })">Lectorium</button>
     <div class="navbar__btns">
-      <button class="navbar__btn">Лекции</button>
+      <button class="navbar__btn"  @click="$router.push({ name: 'lectures' })">Лекции</button>
       <button class="navbar__btn">Профиль</button>
     </div>
   </div>
@@ -16,10 +16,6 @@ export default {
 </script>
 
 <style scoped>
-.logo{
-  font-family: "Playfair Display", serif;
-  font-size: 25px;
-}
 .navbar {
   height: 10%;
   background: rgb(250, 250, 250);
@@ -41,5 +37,9 @@ export default {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   background: transparent;
+}
+.logo{
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
 }
 </style>

@@ -124,15 +124,19 @@
       />
       <div class="display-info">
         <div class="logo">Личный кабинет</div>
-        <div class="description">Преподаватель</div>
+        <div v-if="$store.state.isTeacher" class="description">Преподаватель</div>
+        <div v-else class="description">Студент</div>
       </div>
-      <img class="avatar" src="../../public/images/avat.jpg" />
+      <img class="avatar" :src="$store.state.avatarURL" />
       <div class="info-grid">
-        <div class="user__firstname">Дмитрий</div>
-        <div class="user__lastname">Чупахин</div>
+        <div class="user__firstname">{{ $store.state.firstName }}</div>
+        <div class="user__lastname">{{ $store.state.lastName }}</div>
       </div>
-      <button class="uploadLect">Добавить новую лекцию</button>
-      <div class="lecture-title">Лекции</div>
+      <button v-if="$store.state.isTeacher" class="uploadLect">
+        Добавить новую лекцию
+      </button>
+      <div v-if="$store.state.isTeacher" class="lecture-title">Лекции</div>
+      <div v-else class="lecture-title">Сохраненые лекции</div>
       <div class="listLect-grid">
         <div class="lecture">
           <div class="lecture__title">Хуц</div>

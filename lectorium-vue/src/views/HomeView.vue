@@ -174,7 +174,27 @@ export default {
     if (this.$route.query.payload) {
       const payloadData = JSON.parse(this.$route.query.payload);
       this.$store.state.isAuth = true;
-      this.postData(payloadData.token, payloadData.uuid, payloadData.user.id);
+      const response = this.postData(
+        payloadData.token,
+        payloadData.uuid,
+        payloadData.user.id
+      );
+      response
+        .then((result) => {
+          // Обработка успешного выполнения операции
+          const data = result.data; // Ваш объект с данными
+          this.$store.state.isSuperUser = data.is_user_super;
+          this.$store.state.isTeacher = data.is_user_teacher;
+          this.$store.state.firstName = data.first_name;
+          this.$store.state.lastName = data.last_name;
+          this.$store.state.avatarURL = data.avatar;
+          this.$store.state.accessToken = data.access_token;
+        })
+        .catch((error) => {
+          // Обработка ошибок, если таковые возникли
+          console.error("Ошибка при получении данных:", error);
+        });
+      this.$store.state.isSuperUser = response;
     }
   },
   methods: {
@@ -191,13 +211,9 @@ export default {
         };
 
         // Отправляем POST-запрос и получаем ответ
-        const response = await axios.post(url, data);
-
-        // Обработка успешного ответа
-        console.log("Успешный ответ:", response.data);
+        return await axios.post(url, data);
       } catch (error) {
-        // Обработка ошибки
-        console.error("Ошибка при отправке POST-запроса:", error);
+        console.log("login-error");
       }
     },
   },

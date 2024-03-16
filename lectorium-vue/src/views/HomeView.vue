@@ -53,6 +53,9 @@ export default {
     align-items: center;
     font-weight: 600;
   }
+  .footer-logo{
+        font-family: "Playfair Display", serif;
+  }
   .team-logo{
     font-family: "Playfair Display", serif;
     font-size: 2vw;

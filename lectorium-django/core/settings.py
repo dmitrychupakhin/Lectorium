@@ -130,5 +130,6 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Добавьте здесь ваш домен
+    'http://127.0.0.1:80',  # Добавьте здесь ваш домен
+    'http://127.0.0.1:8000',
 ]

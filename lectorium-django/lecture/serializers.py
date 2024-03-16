@@ -4,5 +4,5 @@ from .models import *
 class LectureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lecture
-        fields = ('id', 'title', 'content')
+        fields = ('id', 'title', 'faculty','lecturer','cource','content')
         read_only_fields = ('id',)

@@ -235,10 +235,9 @@ export default {
   height: 10vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   z-index: 2;
-  background: white;
 }
 
 .logo {

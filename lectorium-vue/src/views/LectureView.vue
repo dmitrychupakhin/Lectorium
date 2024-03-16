@@ -1,6 +1,6 @@
 <template>
     <div class="content">   
-123
+        <div class="lecure-title"></div>
     </div>
 </template>
 

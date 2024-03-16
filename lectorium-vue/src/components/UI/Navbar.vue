@@ -31,8 +31,9 @@ export default {
   align-items: center;
   padding: 15px 10%;
   width: 100%;
-  position:fixed;
+  position: fixed;
 }
+
 .navbar__btns {
   margin-left: auto;
   display: grid;
@@ -40,12 +41,13 @@ export default {
   grid-template-columns: auto auto;
 }
 
-.navbar__btn{
+.navbar__btn {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   background: transparent;
 }
-.logo{
+
+.logo {
   font-family: "Playfair Display", serif;
   font-size: 30px;
 }

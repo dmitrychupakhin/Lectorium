@@ -1,9 +1,11 @@
 <template>
   <div class="home">
     <header>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sofia&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sofia&display=swap"
+        rel="stylesheet">
     </header>
     <div class="header">
       <div class="logo">Lectorium</div>
@@ -14,7 +16,7 @@
       <div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eum ullam doloremque eaque pariatur earum vel sunt adipisci sint. Aspernatur corrupti consequatur illo? Sequi expedita vel ab quisquam, ipsum dolorem.</div>
     </div>
     <div class="footer">
-        <div class="team-logo">Developed by <span class="footer-logo">Воздушный шарик</span></div>
+      <div class="team-logo">Developed by <span class="footer-logo">Воздушный шарик</span></div>
     </div>
   </div>
 </template>

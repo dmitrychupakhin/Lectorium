@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "HomeView",
   components: {},
@@ -49,13 +51,34 @@ export default {
     // Проверяем наличие параметра query по его имени, например, 'paramName'
     if (this.$route.query.payload) {
       const payloadData = JSON.parse(this.$route.query.payload);
-      console.log("Токен:", payloadData.token);
-      console.log("uuid:", payloadData.uuid);
-      console.log("User ID:", payloadData.user.id);
       this.$store.state.isAuth = true;
+      this.postData(payloadData.token, payloadData.uuid, payloadData.user.id);
     }
   },
-  methods: {},
+  methods: {
+    async postData(token, uuid, id) {
+      try {
+        // Ваш URL для отправки POST-запроса
+        const url = "http://127.0.0.1:8000/api/v1/Account/login/";
+
+        // Данные, которые вы хотите отправить
+        const data = {
+          silent: token,
+          uuid: uuid,
+          id: id,
+        };
+
+        // Отправляем POST-запрос и получаем ответ
+        const response = await axios.post(url, data);
+
+        // Обработка успешного ответа
+        console.log("Успешный ответ:", response.data);
+      } catch (error) {
+        // Обработка ошибки
+        console.error("Ошибка при отправке POST-запроса:", error);
+      }
+    },
+  },
 };
 </script>
 

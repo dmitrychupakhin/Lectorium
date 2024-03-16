@@ -2,7 +2,7 @@ from django.db import models
 import os
 
 class Lecture(models.Model):
-    title = models.TextField()
+    title_lect = models.TextField()
     content = models.FileField(upload_to='media')
     faculty = models.TextField()
     lecturer = models.TextField()

@@ -238,6 +238,7 @@ export default {
   align-items: flex-start;
   flex-direction: column;
   z-index: 2;
+  background: white;
 }
 
 .logo {
@@ -303,6 +304,10 @@ export default {
   z-index: 2;
 }
 .lecture {
+  background: white;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 5px;
   display: grid;
   grid-template-columns: 1fr 0fr 0fr;
   align-items: center;

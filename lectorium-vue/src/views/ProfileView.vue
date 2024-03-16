@@ -65,7 +65,8 @@ export default {
 
 <style scoped>
 .userPage {
-  background: whitesmoke;
+  margin: 0px 10%;
+  background: white;
 }
 
 .cabinet {
@@ -77,17 +78,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 25px;
   flex-direction: column;
 }
 
 .logo {
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .description {
-  font-size: 10px;
-  margin-left: 10px;
+  font-size: 20px;
 }
 
 /*.header {

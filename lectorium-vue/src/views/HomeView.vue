@@ -11,6 +11,24 @@
       <div class="logo">Lectorium</div>
       <div class="discription">Библиотека лекций</div>
     </div>
+    <div class="content">
+      <div class="content-title">Сайт с лекциями</div>
+      <div class="content-text">Добро пожаловать в Lectorium. Наш сервис предоставляет удобную платформу для изучения и
+        обмена лекциями. Студенты могут ознакомиться с различными материалами, а преподаватели имеют возможность
+        делиться своими наработками как с учащимися, так и с коллегами.
+        <br /><br />Основные особенности нашего сервиса:
+        <div>
+          <br />- Быстрый и удобный поиск лекций по факультету, курсу и преподавателю.
+          <br />- Уникальная возможность для преподавателей добавлять материалы в текстовом и аудио форматах. Кроме
+          того, преподаватели могут в любое время редактировать свои лекции.
+          <br />- Студенты получают доступ к качественной информации от преподавателей. Если у них возникают вопросы,
+          они могут обратиться за помощью к GPT-модели. Модель анализирует все доступные лекции и предоставляет ответы
+          на заданные вопросы.
+        </div>
+
+        <br />Мы стремимся сделать процесс обучения более эффективным и доступным для всех пользователей Lectorium.
+      </div>
+    </div>
     <div class="footer">
       <div class="team-logo">Developed by <span class="footer-logo">Воздушный шарик</span></div>
     </div>
@@ -37,6 +55,26 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.content {
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px 10%;
+}
+
+.content-title {
+  font-size: 5vw;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.content-text {
+  font-size: 2vw;
+  text-align: start;
 }
 
 .logo {

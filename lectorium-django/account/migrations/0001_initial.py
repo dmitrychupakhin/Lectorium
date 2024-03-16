@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="Lecture",
+            name="Account",
             fields=[
                 (
                     "id",
@@ -21,12 +21,13 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("title", models.TextField()),
-                ("content", models.FileField(upload_to="media")),
-                ("faculty", models.TextField()),
-                ("lecturer", models.TextField()),
-                ("cource", models.TextField()),
-                ("date", models.DateTimeField(auto_now_add=True)),
+                ("vk_id", models.TextField()),
+                ("first_name", models.TextField()),
+                ("last_name", models.TextField()),
+                ("third_name", models.TextField()),
+                ("avatar", models.TextField()),
+                ("is_Prepod", models.BooleanField()),
+                ("is_Superuser", models.BooleanField()),
             ],
         ),
     ]

@@ -6,7 +6,7 @@ class Lecture(models.Model):
     content = models.FileField(upload_to='media')
     faculty = models.TextField()
     lecturer = models.TextField()
-    cource = models.TextField()
+    cource = models.TextField(default='')
     date = models.DateTimeField(auto_now_add=True)
 
     

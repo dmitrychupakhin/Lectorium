@@ -3,7 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import LecturesView from '@/views/LecturesView.vue'
 import LectureView from '@/views/LectureView.vue'
 import ProfileView from '@/views/ProfileView.vue'
-import LoginView from '@/views/LoginView.vue'
+import AdminView from '@/views/AdminView.vue'
 
 const routes = [
   {
@@ -27,9 +27,9 @@ const routes = [
     component: ProfileView
   },
   {
-    path: '/login/',
-    name: 'login',
-    component: LoginView
+    path: '/admin/',
+    name: 'admin',
+    component: AdminView
   }
 ]
 

@@ -22,15 +22,32 @@
       <button class="uploadLect">Добавить</button>
       <h1>Список лекций:</h1>
       <div class="listLect-grid">
-        <div>Лекция 1</div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+        </div>
         <button class="deleteLect">Удалить</button>
-        <div>Лекция 2</div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+        </div>
         <button class="deleteLect">Удалить</button>
-        <div>Лекция 3</div>
-        <button class="deleteLect">Удалить</button>
-        <div>Лекция 4</div>
-        <button class="deleteLect">Удалить</button>
-        <div>Лекция 5</div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+        </div>
         <button class="deleteLect">Удалить</button>
       </div>
     </div>

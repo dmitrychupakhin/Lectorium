@@ -154,9 +154,8 @@
       </div>
     </div>
     <div class="footer">
-      <div class="team-logo">
-        Developed by <span class="footer-logo">Воздушный шарик</span>
-      </div>
+      <div class="team-logo">Developed by</div>
+      <span class="footer-logo">Воздушный шарик</span>
     </div>
   </div>
 </template>
@@ -324,9 +323,12 @@ export default {
   align-items: center;
   font-weight: 600;
   margin-top: 50px;
+  flex-direction: column;
 }
 .footer-logo {
   font-family: "Playfair Display", serif;
+  font-size: 2vw;
+  margin-top: 10px;
 }
 .team-logo {
   font-family: "Playfair Display", serif;

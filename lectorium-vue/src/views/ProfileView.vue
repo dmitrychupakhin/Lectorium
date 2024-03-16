@@ -1,26 +1,138 @@
 <template>
   <div class="userPage">
     <header>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sofia&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+      />
     </header>
     <div class="cabinet">
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e26379f9b43142545_illustration-header%235.webp"
+        loading="lazy"
+        height=""
+        width="120"
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a47"
+        class="header-homepage_image _1"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e68e9491a96729797_illustration-header%236.webp"
+        loading="lazy"
+        width="80"
+        height=""
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a49"
+        class="header-homepage_image _2"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22eda07c7db7a12d570_illustration-header%237.webp"
+        loading="lazy"
+        width="80"
+        height=""
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a48"
+        class="header-homepage_image _4"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e446e079c4846858f_illustration-header%234.webp"
+        loading="lazy"
+        width="80"
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4b"
+        alt=""
+        class="header-homepage_image _5"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e26f4aca4c00350b8_illustration-header%233.webp"
+        loading="lazy"
+        width="80"
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4c"
+        alt=""
+        class="header-homepage_image _6"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64ec817a2a3121cc181bd961_illustration-paper.png"
+        loading="lazy"
+        width="100"
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4d"
+        class="header-homepage_image _7"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a283f5f37f9bee2080f_illustration-house-of-papers.webp"
+        loading="lazy"
+        width="230"
+        alt=""
+        class="header-homepage_image _9"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e473da5a9cb221a3780c37_illustration-header%231.webp"
+        loading="lazy"
+        width="230"
+        alt=""
+        class="header-homepage_image _8"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a27b00b97ccab1517c6_illustration-paper-pile.webp"
+        loading="lazy"
+        height="100"
+        alt=""
+        class="header-homepage_image _10"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c423707e5fdc70b7a6d_illustration-paper-pile%231.webp"
+        loading="lazy"
+        width="200"
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a50"
+        alt=""
+        class="header-homepage_image _11"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c42b00b97ccab17891e_illustration-paper-pile%232.webp"
+        loading="lazy"
+        width="200"
+        alt=""
+        data-w-id="4cd07e59-88e8-9c7a-e6c4-e3629d019184"
+        class="header-homepage_image _12"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a275645561b96e49e5d_illustration-paper-float.webp"
+        loading="lazy"
+        width="200"
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4e"
+        class="header-homepage_image _13"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e26f4aca4c00350b8_illustration-header%233.webp"
+        loading="lazy"
+        width="80"
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4c"
+        alt=""
+        class="header-homepage_image _14"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22eda07c7db7a12d570_illustration-header%237.webp"
+        loading="lazy"
+        width="80"
+        height=""
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a48"
+        class="header-homepage_image _15"
+      />
       <div class="display-info">
         <div class="logo">Личный кабинет</div>
         <div class="description">Преподаватель</div>
       </div>
       <img class="avatar" src="../../public/images/avat.jpg" />
       <div class="info-grid">
-        <div>Фамилия</div>
-        <div class="info-field">Input</div>
-        <div>Имя</div>
-        <div class="info-field">Input</div>
+        <div class="user__firstname">Дмитрий</div>
+        <div class="user__lastname">Чупахин</div>
       </div>
-      <button class="uploadLect">Добавить</button>
-      <h1>Список лекций:</h1>
+      <button class="uploadLect">Добавить новую лекцию</button>
+      <div class="lecture-title">Лекции</div>
       <div class="listLect-grid">
         <div class="lecture">
           <div class="lecture__title">Хуц</div>
@@ -29,48 +141,94 @@
             <div class="lecture__course">Программирование</div>
             <div class="lecture__data">27.42.4200</div>
           </div>
+          <button class="deleteLect">Удалить</button>
         </div>
-        <button class="deleteLect">Удалить</button>
-        <div class="lecture">
-          <div class="lecture__title">Хуц</div>
-          <div class="lecture__info">
-            <div class="lecuture__autor">Dmitry</div>
-            <div class="lecture__course">Программирование</div>
-            <div class="lecture__data">27.42.4200</div>
-          </div>
-        </div>
-        <button class="deleteLect">Удалить</button>
-        <div class="lecture">
-          <div class="lecture__title">Хуц</div>
-          <div class="lecture__info">
-            <div class="lecuture__autor">Dmitry</div>
-            <div class="lecture__course">Программирование</div>
-            <div class="lecture__data">27.42.4200</div>
-          </div>
-        </div>
-        <button class="deleteLect">Удалить</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'ProfileView',
-  components: {
-  }
-}
+  name: "ProfileView",
+  components: {},
+};
 </script>
 
 <style scoped>
+.header-homepage_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.header-homepage_image._1 {
+  top: 25%;
+  left: 0%;
+}
+.header-homepage_image._2 {
+  top: 15%;
+  left: 12%;
+}
+.header-homepage_image._3 {
+  top: 15%;
+  left: 43%;
+}
+.header-homepage_image._4 {
+  top: 15%;
+  left: 25%;
+}
+.header-homepage_image._5 {
+  top: 15%;
+  left: 70%;
+}
+.header-homepage_image._6 {
+  top: 20%;
+  left: 80%;
+}
+.header-homepage_image._7 {
+  top: 28%;
+  left: 89%;
+}
+.header-homepage_image._8 {
+  top: 57%;
+  left: 5%;
+}
+.header-homepage_image._9 {
+  top: 55%;
+  left: 80%;
+}
+.header-homepage_image._10 {
+  top: 83%;
+  left: 18%;
+}
+.header-homepage_image._11 {
+  top: 70%;
+  left: 27%;
+}
+.header-homepage_image._12 {
+  top: 80%;
+  left: 45%;
+}
+.header-homepage_image._13 {
+  top: 70%;
+  left: 65%;
+}
+.header-homepage_image._14 {
+  top: 32%;
+  left: 10%;
+}
+.header-homepage_image._15 {
+  top: 27%;
+  left: 72%;
+}
 .userPage {
   margin: 0px 10%;
   background: white;
 }
 
 .cabinet {
-  margin-top: 75px;
+  margin-top: 80px;
+  display: grid;
 }
 
 .display-info {
@@ -79,67 +237,90 @@ export default {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  z-index: 2;
 }
 
 .logo {
   font-size: 25px;
+  z-index: 2;
 }
 
 .description {
   font-size: 20px;
+  z-index: 2;
 }
 
-/*.header {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+.info-grid {
   display: flex;
-  flex-direction: column;
-}*/
-
-.info-grid,
-.listLect-grid {
-  width: 80%;
-  margin-left: 20px;
-  margin-top: 20px;
-  align-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-auto-rows: 1fr;
-  gap: 1rem;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+  margin-top: 10px;
+  z-index: 2;
 }
 
 .listLect-grid {
-  grid-template-columns: 3fr 0.5fr;
-  gap: 5px;
+  display: grid;
+  width: 100%;
+  z-index: 2;
 }
 
 .avatar {
   display: flex;
-  margin-left: 49%;
+  justify-self: center;
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
 
-.info-grid>div,
 .uploadLect,
 .deleteLect {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  color: #0f0f0f;
-  background-color: #ffffff;
-  transition: border-color 0.25s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 2;
+  background: white;
 }
 
+.uploadLect:hover,
+.deleteLect:hover {
+  background: rgb(241, 241, 241);
+}
+
+.uploadLect {
+  font-size: 20px;
+  right: 0;
+  margin-bottom: 20px;
+  width: fit-content;
+}
 .uploadLect,
 .deleteLect {
-  margin-top: 10px;
-  margin-left: 40px;
+}
+.lecture-title {
+  font-size: 20px;
+  z-index: 2;
+}
+.lecture {
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.lecture__title {
+  font-size: 20px;
+  background: transparent;
+  border-bottom: 1px dotted black;
+  width: min-content;
+}
+
+.lecture__info {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
 }
 </style>

@@ -13,7 +13,15 @@
     </div>
     <div class="content">
       <div class="content-title">Сайт с лекциями</div>
-      <div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eum ullam doloremque eaque pariatur earum vel sunt adipisci sint. Aspernatur corrupti consequatur illo? Sequi expedita vel ab quisquam, ipsum dolorem.</div>
+      <div class="content-text">Добро пожаловать в Lectorium. Наш сервис предоставляет удобную платформу для изучения и обмена лекциями. Студенты могут ознакомиться с различными материалами, а преподаватели имеют возможность делиться своими наработками как с учащимися, так и с коллегами.
+    <br/><br/>Основные особенности нашего сервиса:
+    <div>
+      <br/>- Быстрый и удобный поиск лекций по факультету, курсу и преподавателю.
+    <br/>- Уникальная возможность для преподавателей добавлять материалы в текстовом и аудио форматах. Кроме того, преподаватели могут в любое время редактировать свои лекции.
+    <br/>- Студенты получают доступ к качественной информации от преподавателей. Если у них возникают вопросы, они могут обратиться за помощью к GPT-модели. Модель анализирует все доступные лекции и предоставляет ответы на заданные вопросы.
+    </div>
+
+<br/>Мы стремимся сделать процесс обучения более эффективным и доступным для всех пользователей Lectorium.</div>
     </div>
     <div class="footer">
       <div class="team-logo">Developed by <span class="footer-logo">Воздушный шарик</span></div>
@@ -42,11 +50,12 @@ export default {
     flex-direction: column;
   }
   .content{
-    height: 70vh;
+    height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0px 10%;
   }
   .content-title{
     font-size: 5vw;
@@ -54,7 +63,8 @@ export default {
     margin-bottom: 20px;
   }
   .content-text{
-    font-size: 4vw;
+    font-size: 2vw;
+    text-align:start;
   }
   .logo{
     font-family: "Playfair Display", serif;

@@ -9,7 +9,7 @@
     <button class="navbar__btn logo" @click="$router.push({ name: 'home' })">Lectorium</button>
     <div class="navbar__btns">
       <button class="navbar__btn"  @click="$router.push({ name: 'lectures' })">Лекции</button>
-      <button v-if="$store.state.isAuth" class="navbar__btn">Профиль</button>
+      <button v-if="$store.state.isAuth" class="navbar__btn"  @click="$router.push({ name: 'profile' })">Профиль</button>
       <button v-else class="navbar__btn">Войти</button>
     </div>
   </div>

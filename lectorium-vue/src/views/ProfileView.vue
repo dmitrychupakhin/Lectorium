@@ -17,14 +17,6 @@
         <div class="info-field">Input</div>
         <div>Имя</div>
         <div class="info-field">Input</div>
-        <div>Отчество</div>
-        <div class="info-field">Input</div>
-        <div>Дата рождения</div>
-        <div class="info-field">Input</div>
-        <div>Факультет</div>
-        <div class="info-field">Input</div>
-        <div>Курс</div>
-        <div class="info-field">Input</div>
       </div>
       <button class="upload">Загрузить</button>
     </div>
@@ -42,7 +34,8 @@ export default {
 
 <style scoped>
 .userPage {
-  background: whitesmoke;
+  margin: 0px 10%;
+  background: white;
 }
 
 .cabinet {
@@ -54,17 +47,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 25px;
   flex-direction: column;
 }
 
 .logo {
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .description {
-  font-size: 10px;
-  margin-left: 10px;
+  font-size: 20px;
 }
 
 /*.header {
@@ -76,7 +67,6 @@ export default {
 }*/
 
 .info-grid {
-  margin-left: 20px;
   margin-top: 20px;
   align-self: center;
   display: grid;

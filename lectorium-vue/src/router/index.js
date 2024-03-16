@@ -19,7 +19,7 @@ const routes = [
     path: '/lecture/:id',
     name: 'lecture',
     component: LectureView
-  }
+  },
   {
     path: '/profile/',
     name: 'profile',

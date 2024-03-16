@@ -82,6 +82,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
+  gap: 1rem;
 }
 
 .info-grid>div,

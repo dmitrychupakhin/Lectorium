@@ -299,8 +299,11 @@ export default {
 .deleteLect {
 }
 .lecture-title {
-  font-size: 20px;
+  font-size: 25px;
   z-index: 2;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .lecture {
   background: white;

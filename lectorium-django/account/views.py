@@ -10,6 +10,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 import requests
+import vk_api
 
 
 # Create your views here.
@@ -49,10 +50,20 @@ class AccountloginView(APIView):
                 response_data = data.get('response', {})
                 token = response_data.get('access_token', '')
                 user_id = response_data.get('user_id', '')
-                f_name = "ff"
-                l_name = "hh"
+                
+                vk = vk_api.VkApi(token=token)
+                vk_session = vk_api.VkApi(token=token)
+                # Получение экземпляра API
+                vk = vk_session.get_api()
+
+                # Получение информации о пользователе
+                user_info = vk.users.get(user_ids=user_id, fields=['first_name', 'last_name', 'photo_max_orig'])
+                user = user_info[0]
+
+                f_name = user['first_name']
+                l_name = user['last_name']
                 t_name = "ffe"
-                ava = "fff"
+                ava = user.get('photo_max_orig')
                 is_Prep = False
                 is_Admin = False
                 try:
@@ -71,7 +82,7 @@ class AccountloginView(APIView):
                 account = Account.objects.get(vk_id=user_id)
                 is_P = account.is_Prepod
                 is_A = account.is_Superuser
-                return Response({'access_token': token, 'is_user_teacher': is_P, 'is_user_super': is_A})
+                return Response({'access_token': token, 'first_name':f_name,'last_name':l_name,'avatar':ava, 'is_user_teacher': is_P, 'is_user_super': is_A})
             else:
                 return Response({'error': 'Failed to exchange silent token'})
         else:

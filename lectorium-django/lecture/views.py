@@ -11,11 +11,17 @@ import math
 
 class LectureListCreateView(generics.ListCreateAPIView):
     queryset = Lecture.objects.all()
+    querysetFaculty = Faculty.objects.all()
+    querysetCourse = Course.objects.all()
+    querysetAccounts = Account.objects.all()
     serializer_class = LectureSerializer
     lookup_field = 'id'
     count_str = 0
     def get(self, request, *args, **kwargs):
         queryset = super().get_queryset()
+        querysetFaculty = super().get_queryset()
+        querysetCourse = super().get_queryset()
+        querysetAccounts = super().get_queryset()
 
         # Получаем параметры запроса
         title_lect = self.request.query_params.get('title_lect')
@@ -35,11 +41,16 @@ class LectureListCreateView(generics.ListCreateAPIView):
         if title_lect:
             queryset = queryset.filter(title_lect=title_lect)
         if teacher:
-            queryset = queryset.filter(teacher=teacher)
+            teacher_instance = Account.objects.filter(vk_id=teacher).first()
+            queryset = queryset.filter(lecturer=teacher_instance)
         if cource:
-            queryset = queryset.filter(cource=cource)
+            course_instance = Course.objects.filter(title=cource).first()
+            if course_instance:
+                queryset = queryset.filter(cource=course_instance)
         if faculty:
-            queryset = queryset.filter(faculty=faculty)
+            faculty_instance = Faculty.objects.filter(title=faculty).first()
+            if faculty_instance:
+                queryset = queryset.filter(faculty=faculty_instance)
         if date:
             queryset = queryset.filter(date=date)
         
@@ -49,14 +60,41 @@ class LectureListCreateView(generics.ListCreateAPIView):
         return Response({'data': serializer.data, 'total_pages': int(count_str)})
     
     
-        
-    
-        
-
 class LectureRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Lecture.objects.all()
     serializer_class = LectureSerializer
     lookup_field = 'id'
+    
+class FacultyListCreateView(generics.ListCreateAPIView):
+    queryset = Faculty.objects.all()
+    serializer_class = FacultySerializer
+    lookup_field = 'id'
+    def get(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data)
+    
+class FacultyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Faculty.objects.all()
+    serializer_class = FacultySerializer
+    lookup_field = 'id'
+    
+class CourseListCreateView(generics.ListCreateAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+    lookup_field = 'id'
+    def get(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data)
+    
+class CourseRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+    lookup_field = 'id'
+    
+
+    
     
 #def download_file(request, pk):
     # Получить объект из базы данных по его ключу

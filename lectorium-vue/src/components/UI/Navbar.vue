@@ -1,9 +1,16 @@
 <template>
   <div class="navbar">
+    <header>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sofia&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      </header>
     <button class="navbar__btn logo" @click="$router.push({ name: 'home' })">Lectorium</button>
     <div class="navbar__btns">
       <button class="navbar__btn"  @click="$router.push({ name: 'lectures' })">Лекции</button>
-      <button class="navbar__btn">Профиль</button>
+      <button v-if="$store.state.isAuth" class="navbar__btn">Профиль</button>
+      <button v-else class="navbar__btn">Войти</button>
     </div>
   </div>
 </template>
@@ -15,9 +22,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .navbar {
-  height: 10%;
+  height: 70px;
   background: rgb(250, 250, 250);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.09);
   display: flex;

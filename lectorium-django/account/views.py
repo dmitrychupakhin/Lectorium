@@ -46,11 +46,32 @@ class AccountloginView(APIView):
             if response.status_code == 200:
                 data = response.json()
                 print(data)
-                if 'access_token' in data:
-                    access_token = data['access_token']
-                    return Response({'access_token': access_token})
-                else:
-                    return Response({'error': 'Access token not found in response'})
+                response_data = data.get('response', {})
+                token = response_data.get('access_token', '')
+                user_id = response_data.get('user_id', '')
+                f_name = "ff"
+                l_name = "hh"
+                t_name = "ffe"
+                ava = "fff"
+                is_Prep = False
+                is_Admin = False
+                try:
+                    account = Account.objects.get(vk_id=user_id)
+                except Account.DoesNotExist:
+                    account = Account.objects.create(
+                        vk_id=user_id,
+                        first_name=f_name,
+                        last_name=l_name,
+                        third_name=t_name,
+                        avatar=ava,
+                        is_Prepod=is_Prep,
+                        is_Superuser=is_Admin
+                    )
+                    account.save()
+                account = Account.objects.get(vk_id=user_id)
+                is_P = account.is_Prepod
+                is_A = account.is_Superuser
+                return Response({'access_token': token, 'is_user_teacher': is_P, 'is_user_super': is_A})
             else:
                 return Response({'error': 'Failed to exchange silent token'})
         else:

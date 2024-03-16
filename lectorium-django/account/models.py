@@ -9,3 +9,5 @@ class Account(models.Model):
     avatar = models.TextField()
     is_Prepod = models.BooleanField()
     is_Superuser = models.BooleanField()
+    def __str__(self):
+        return self.vk_id

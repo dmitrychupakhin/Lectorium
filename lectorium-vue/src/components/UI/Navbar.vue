@@ -2,8 +2,8 @@
   <div class="navbar">
     <button class="navbar__btn logo" @click="$router.push({ name: 'home' })">Lectorium</button>
     <div class="navbar__btns">
-      <button class="navbar__btn"  @click="$router.push({ name: 'lectures' })">Лекции</button>
-      <button class="navbar__btn">Профиль</button>
+      <button class="navbar__btn" @click="$router.push({ name: 'lectures' })">Лекции</button>
+      <button class="navbar__btn" @click="$router.push({ name: 'profile' })">Профиль</button>
     </div>
   </div>
 </template>
@@ -24,8 +24,9 @@ export default {
   align-items: center;
   padding: 15px 10%;
   width: 100%;
-  position:fixed;
+  position: fixed;
 }
+
 .navbar__btns {
   margin-left: auto;
   display: grid;
@@ -33,12 +34,13 @@ export default {
   grid-template-columns: auto auto;
 }
 
-.navbar__btn{
+.navbar__btn {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   background: transparent;
 }
-.logo{
+
+.logo {
   font-family: "Playfair Display", serif;
   font-size: 30px;
 }

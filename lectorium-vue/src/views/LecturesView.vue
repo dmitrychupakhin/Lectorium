@@ -9,17 +9,17 @@
     <div class="content">
         <div class="search-navbar">
             <select class="select">
-                <option disabled selected value="">Факультет</option>
+                <option selected value="">Факультет</option>
                 <option value="">ФАИ</option>
                 <option value="">МИ</option>
             </select>
             <select class="select">
-                <option disabled selected value="">Преподаватель</option>
+                <option selected value="">Преподаватель</option>
                 <option value="">Ведищев</option>
                 <option value="">Струков</option>
             </select>
             <select class="select">
-                <option disabled selected value="">Курс</option>
+                <option selected value="">Курс</option>
                 <option value="">Программная инженерия</option>
                 <option value="">Численные методы</option>
             </select>
@@ -27,23 +27,7 @@
         </div>
         <div class="lectures">
             <div class="lecture">
-                <div class="lecture__title">Хуц</div>
-                <div class="lecture__info">
-                    <div class="lecuture__autor">Dmitry</div>
-                    <div class="lecture__course">Программирование</div>
-                    <div class="lecture__data">27.42.4200</div>
-                </div>
-            </div>
-            <div class="lecture">
-                <div class="lecture__title">Хуц</div>
-                <div class="lecture__info">
-                    <div class="lecuture__autor">Dmitry</div>
-                    <div class="lecture__course">Программирование</div>
-                    <div class="lecture__data">27.42.4200</div>
-                </div>
-            </div>
-            <div class="lecture">
-                <div class="lecture__title">Хуц</div>
+                <button @click="$router.push(`/lecture/2/`)" class="lecture__title">Хуц</button>
                 <div class="lecture__info">
                     <div class="lecuture__autor">Dmitry</div>
                     <div class="lecture__course">Программирование</div>
@@ -102,6 +86,8 @@ export default {
         margin-bottom: 5px;
     }
     .lecture__title{
+        font-size: 20px;
+        background: transparent;
         border-bottom: 1px dotted black;
     }
     .lecture__info{

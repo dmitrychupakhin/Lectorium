@@ -9,6 +9,10 @@
       <div class="logo">Lectorium</div>
       <div class="discription">Библиотека лекций</div>
     </div>
+    <div class="content">
+      <div class="content-title">Сайт с лекциями</div>
+      <div class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi eum ullam doloremque eaque pariatur earum vel sunt adipisci sint. Aspernatur corrupti consequatur illo? Sequi expedita vel ab quisquam, ipsum dolorem.</div>
+    </div>
     <div class="footer">
         <div class="team-logo">Developed by <span class="footer-logo">Воздушный шарик</span></div>
     </div>
@@ -34,6 +38,21 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .content{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .content-title{
+    font-size: 5vw;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .content-text{
+    font-size: 4vw;
   }
   .logo{
     font-family: "Playfair Display", serif;

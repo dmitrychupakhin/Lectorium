@@ -135,11 +135,12 @@
     <div class="content">
       <div class="content-title">Сайт с лекциями</div>
       <div class="content-text">
-        <span class="first-line">Добро пожаловать в Lectorium.</span> Наш сервис
-        предоставляет удобную платформу для изучения и обмена лекциями. Студенты могут
-        ознакомиться с различными материалами, а преподаватели имеют возможность делиться
-        своими наработками как с учащимися, так и с коллегами.
-        <br />
+        <div class="first-text-data">
+          <span class="first-line">Добро пожаловать в Lectorium.</span> Наш сервис
+          предоставляет удобную платформу для изучения и обмена лекциями. Студенты могут
+          ознакомиться с различными материалами, а преподаватели имеют возможность
+          делиться своими наработками как с учащимися, так и с коллегами.
+        </div>
         <div class="text-container">
           - Быстрый и удобный поиск лекций по факультету, курсу и преподавателю.
           <br />-Уникальная возможность для преподавателей добавлять материалы в текстовом
@@ -149,8 +150,10 @@
           GPT-модели. Модель анализирует все доступные лекции и предоставляет ответы на
           заданные вопросы.
         </div>
-        <span class="second-line"></span>Мы стремимся сделать процесс обучения более
-        эффективным и доступным для всех пользователей Lectorium.
+        <div class="second-text-data">
+          <span class="second-line"></span>Мы стремимся сделать процесс обучения более
+          эффективным и доступным для всех пользователей Lectorium.
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -202,6 +205,11 @@ export default {
 </script>
 
 <style scoped>
+.first-text-data,
+.second-text-data {
+}
+.text-container {
+}
 .home {
   background: white;
 }
@@ -295,6 +303,9 @@ export default {
   font-size: 2vw;
   text-align: justify;
   font-style: italic;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .text-container {
   border: 1px solid gray;

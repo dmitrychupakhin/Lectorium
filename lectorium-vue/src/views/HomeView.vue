@@ -60,6 +60,10 @@ export default {
   font-weight: 600;
 }
 
+.footer-logo {
+  font-family: "Playfair Display", serif;
+}
+
 .team-logo {
   font-family: "Playfair Display", serif;
   font-size: 2vw;

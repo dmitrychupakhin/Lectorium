@@ -15,10 +15,9 @@
     </div>
     <div id="chatApp">
       <div class="chat-container">
-        <div class="chat-messages">
-          <div v-for="(message, index) in messages" :key="index" class="message">
-            <div class="question">{{ message.question }}</div>
-            <div v-if="message.answer" class="answer">{{ message.answer }}</div>
+        <div class="chat-messages" ref="chatMessages">
+          <div v-for="(message, index) in messages" :key="index" class="message" :class="message.sender">
+            {{ message.message }}
           </div>
         </div>
         <div class="chat-input">
@@ -32,6 +31,7 @@
 
 <script>
 export default {
+  el: '#chatApp',
   data() {
     return {
       messages: [],
@@ -42,19 +42,25 @@ export default {
     sendMessage() {
       if (!this.newMessage) return;
 
+      // Добавляем сообщение пользователя в чат
+      this.messages.push({ sender: 'user', message: this.newMessage });
 
       // Генерируем ответ
-      const botResponse = 'Bot: ' + `Hello, ${this.newMessage}!`;
+      const botResponse = `Hello, ${this.newMessage}!`;
 
       // Добавляем ответ в чат
+      this.messages.push({ sender: 'bot', message: botResponse });
 
-      // Отправляем запрос на сервер и получаем ответ
-      // Здесь должен быть код отправки запроса
-      // ...
-
-      this.messages.push({ question: 'You: ' + this.newMessage, answer: botResponse });
       // Очищаем строку ввода
       this.newMessage = '';
+
+      // Прокручиваем контейнер с сообщениями вниз
+      this.scrollChatToBottom();
+    },
+    scrollChatToBottom() {
+      // Прокручиваем контейнер с сообщениями вниз
+      const chatMessages = this.$refs.chatMessages;
+      chatMessages.scrollTop = chatMessages.scrollHeight;
     }
   }
 };

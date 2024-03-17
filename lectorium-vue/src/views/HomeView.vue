@@ -190,6 +190,7 @@ export default {
           this.$store.state.avatarURL = data.avatar;
           this.$store.state.accessToken = data.access_token;
           this.$store.state.VKID = payloadData.user.id;
+          this.saveStateToCookie();
         })
         .catch((error) => {
           // Обработка ошибок, если таковые возникли
@@ -199,12 +200,13 @@ export default {
     }
   },
   methods: {
+    saveStateToCookie() {
+      this.$cookies.set("state", JSON.stringify(this.$store.state));
+    },
     async postData(token, uuid, id) {
       try {
-        // Ваш URL для отправки POST-запроса
         const url = "http://127.0.0.1:8000/api/v1/Account/login/";
 
-        // Данные, которые вы хотите отправить
         const data = {
           silent: token,
           uuid: uuid,

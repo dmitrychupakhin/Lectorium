@@ -40,12 +40,15 @@
       <div class="lectures">
         <div class="lecture" v-for="lecture in lectures.data" :key="lecture.id">
           <button @click="$router.push(`/lecture/${lecture.id}/`)" class="lecture__title">
-            {{ lecture.title }}
+            {{ lecture.title_lect }}
           </button>
           <div class="lecture__info">
-            <div class="lecuture__autor">Dmitry</div>
-            <div class="lecture__course">Программирование</div>
-            <div class="lecture__data">27.42.4200</div>
+            <div class="lecture__faculty">{{ lecture.faculty.title }}</div>
+            <div class="lecuture__autor">
+              {{ lecture.lecturer.first_name }} {{ lecture.lecturer.last_name }}
+            </div>
+            <div class="lecture__course">{{ lecture.cource.title }}</div>
+            <div class="lecture__data"></div>
           </div>
         </div>
       </div>
@@ -85,7 +88,7 @@ export default {
           "http://127.0.0.1:8000/api/v1/lectures/allteachers/"
         );
         this.lectures = response.data;
-        console.log(this.teachers);
+        console.log(this.lectures);
       } catch (e) {
         alert("Ошибка");
       } finally {

@@ -72,6 +72,7 @@ export default {
       VKID.Auth.login();
     },
   },
+  mounted() {},
 };
 </script>
 

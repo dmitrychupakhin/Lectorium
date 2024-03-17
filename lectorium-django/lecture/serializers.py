@@ -14,23 +14,22 @@ class CourseSerializer(serializers.ModelSerializer):
         model = Course
         fields = ('title',)
         #read_only_fields = ('id',)
-        
+
+class LecturerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Account
+        fields = ('first_name', 'last_name')
+        #read_only_fields = ('id',)
+  
 class LectureSerializer(serializers.ModelSerializer):
-    faculty = serializers.CharField(source='faculty.title')
-    cource = serializers.CharField(source='cource.title')
-    lecturer = serializers.SerializerMethodField()
-    #faculty = f"{serializers.CharField(source='faculty.title')}"
-    #cource = f"{serializers.CharField(source='cource.title')}"
+    faculty = FacultySerializer()
+    cource = CourseSerializer()
+    lecturer = LecturerSerializer()
     class Meta:
         model = Lecture
-        fields = ('id', 'title_lect', 'faculty','lecturer','cource','content')
+        fields = ('id', 'title_lect', 'faculty','lecturer','cource','content', 'date')
         read_only_fields = ('id',)
     
-    def get_lecturer(self, obj):
-        if obj.lecturer:
-            return f"{obj.lecturer.first_name} {obj.lecturer.last_name}"
-        else:
-            return None
     
         
         

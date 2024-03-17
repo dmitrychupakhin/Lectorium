@@ -12,11 +12,18 @@ import toggleMixin from "@/mixins/toggleMixin";
 export default {
   name: "MyDialog",
   mixins: [toggleMixin],
+  methods: {
+    hideDialog() {
+      this.$emit("close"); // Вызываем событие при закрытии диалога
+    },
+  },
 };
 </script>
 
 <style>
+
 .dialog {
+  z-index: 999;
   top: 0;
   bottom: 0;
   right: 0;
@@ -26,9 +33,11 @@ export default {
   display: flex;
 }
 .dialog__content {
+  z-index: 999;
   margin: auto;
   background: white;
   border-radius: 12px;
   padding: 15px;
+  border: 2px solid black;
 }
 </style>

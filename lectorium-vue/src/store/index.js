@@ -9,6 +9,7 @@ export default createStore({
     lastName: "",
     avatarURL: "",
     accessToken: "",
+    VKID: -1,
   },
   getters: {
   },

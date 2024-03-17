@@ -23,8 +23,10 @@
         </select>
         <select class="select">
           <option selected value="">Преподаватель</option>
-          <option value="">Ведищев</option>
-          <option value="">Струков</option>
+          <option v-for="course in teachers.data" :key="course.id" value="">
+            {{ course.first_name }}
+            {{ course.last_name }}
+          </option>
         </select>
         <select class="select">
           <option selected value="">Курс</option>
@@ -33,6 +35,7 @@
           </option>
         </select>
         <input placeholder="Поиск" class="input" />
+        <button class="searchButton">Поиск</button>
       </div>
       <div class="lectures">
         <div class="lecture" v-for="lecture in lectures.data" :key="lecture.id">
@@ -59,6 +62,7 @@ export default {
   components: {},
   data() {
     return {
+      teachers: [],
       courses: [],
       facultes: [],
       lectures: [],
@@ -77,8 +81,11 @@ export default {
           "http://127.0.0.1:8000/api/v1/lectures/facultes/"
         );
         var response = await axios.get("http://127.0.0.1:8000/api/v1/lecture/");
+        this.teachers = await axios.get(
+          "http://127.0.0.1:8000/api/v1/lectures/allteachers/"
+        );
         this.lectures = response.data;
-        console.log(this.lectures.data);
+        console.log(this.teachers);
       } catch (e) {
         alert("Ошибка");
       } finally {
@@ -93,6 +100,18 @@ export default {
 </script>
 
 <style scoped>
+.searchButton {
+  font-size: 15px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 2;
+  background: white;
+}
+.searchButton:hover {
+  background: rgb(241, 241, 241);
+}
 .background {
   position: fixed;
   top: 0;
@@ -113,7 +132,7 @@ export default {
 
 .search-navbar {
   display: grid;
-  grid-template-columns: auto auto auto 1fr;
+  grid-template-columns: auto auto auto auto 1fr;
   gap: 20px;
   width: 100%;
   margin-bottom: 10px;

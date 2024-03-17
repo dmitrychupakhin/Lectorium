@@ -189,6 +189,7 @@ export default {
           this.$store.state.lastName = data.last_name;
           this.$store.state.avatarURL = data.avatar;
           this.$store.state.accessToken = data.access_token;
+          this.$store.state.VKID = payloadData.user.id;
         })
         .catch((error) => {
           // Обработка ошибок, если таковые возникли

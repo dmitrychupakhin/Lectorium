@@ -17,6 +17,9 @@ class LectureListCreateView(generics.ListCreateAPIView):
     serializer_class = LectureSerializer
     lookup_field = 'id'
     count_str = 0
+    def post(self, request, *args, **kwargs):
+        print(request.data)  # Выводим данные из тела POST-запроса
+        return super().post(request, *args, **kwargs)
     def get(self, request, *args, **kwargs):
         queryset = super().get_queryset()
         querysetFaculty = super().get_queryset()

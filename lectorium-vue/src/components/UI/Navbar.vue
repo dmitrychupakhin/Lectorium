@@ -77,7 +77,7 @@ export default {
 
 <style>
 .navbar {
-  z-index: 2;
+  z-index: 999;
   height: 70px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
   backdrop-filter: blur(5px);

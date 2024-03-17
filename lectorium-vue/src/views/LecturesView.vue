@@ -1,20 +1,25 @@
 <template>
   <div class="home">
+    <div class="background"></div>
     <header>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sofia&display=swap"
-        rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet"
+      />
     </header>
-    <div class="content">
+    <div class="content" v-if="!isLecturesLoading">
       <div class="search-navbar">
         <select class="select">
           <option selected value="">Факультет</option>
-          <option value="">ФАИ</option>
-          <option value="">МИ</option>
+          <option v-for="facultet in facultes.data" :key="facultet.id" value="">
+            {{ facultet.title }}
+          </option>
         </select>
         <select class="select">
           <option selected value="">Преподаватель</option>
@@ -23,14 +28,17 @@
         </select>
         <select class="select">
           <option selected value="">Курс</option>
-          <option value="">Программная инженерия</option>
-          <option value="">Численные методы</option>
+          <option v-for="course in courses.data" :key="course.id" value="">
+            {{ course.title }}
+          </option>
         </select>
         <input placeholder="Поиск" class="input" />
       </div>
       <div class="lectures">
-        <div class="lecture">
-          <button @click="$router.push(`/lecture/2/`)" class="lecture__title">Хуц</button>
+        <div class="lecture" v-for="lecture in lectures.data" :key="lecture.id">
+          <button @click="$router.push(`/lecture/${lecture.id}/`)" class="lecture__title">
+            {{ lecture.title }}
+          </button>
           <div class="lecture__info">
             <div class="lecuture__autor">Dmitry</div>
             <div class="lecture__course">Программирование</div>
@@ -38,28 +46,65 @@
           </div>
         </div>
       </div>
-      <div class="lecture">
-        <div class="lecture__title">Хуц</div>
-        <div class="lecture__info">
-          <div class="lecuture__autor">Dmitry</div>
-          <div class="lecture__course">Программирование</div>
-          <div class="lecture__data">27.42.4200</div>
-        </div>
-      </div>
     </div>
+    <div v-else>Loading...</div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 
 export default {
-  name: 'HomeView',
-  components: {
-  }
-}
+  name: "HomeView",
+  components: {},
+  data() {
+    return {
+      courses: [],
+      facultes: [],
+      lectures: [],
+      page: 1,
+      limit: 10,
+      totalPages: 0,
+      isLecturesLoading: true,
+    };
+  },
+  methods: {
+    async fetchLectures() {
+      try {
+        this.isLecturesLoading = true;
+        this.courses = await axios.get("http://127.0.0.1:8000/api/v1/lectures/courses/");
+        this.facultes = await axios.get(
+          "http://127.0.0.1:8000/api/v1/lectures/facultes/"
+        );
+        var response = await axios.get("http://127.0.0.1:8000/api/v1/lecture/");
+        this.lectures = response.data;
+        console.log(this.lectures.data);
+      } catch (e) {
+        alert("Ошибка");
+      } finally {
+        this.isLecturesLoading = false;
+      }
+    },
+  },
+  mounted() {
+    this.fetchLectures();
+  },
+};
 </script>
 
 <style scoped>
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://sun9-19.userapi.com/impg/Pn1vhbzR4MI2b-O9o-vpyz-zBPVQ-UIayAU2ew/Kz4ndijyGaI.jpg?size=1920x1080&quality=96&sign=57b541a697102c4974c4c1e3a30c49ec&type=album");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
 .content {
   font-family: "Rubik", sans-serif;
   margin: 0px 10%;
@@ -72,30 +117,41 @@ export default {
   gap: 20px;
   width: 100%;
   margin-bottom: 10px;
-
 }
 
 .select {
   font-family: "Rubik", sans-serif;
   font-size: 25px;
   width: 240px;
-  border-right: 1px solid rgba(0, 0, 0, 0.368);
-  border-left: 1px solid rgba(0, 0, 0, 0.368);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.368);
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  z-index: 2;
+  background: white;
 }
 
 .input {
   font-family: "Rubik", sans-serif;
   font-size: 25px;
-  padding: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.368);
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  z-index: 2;
+  background: white;
+  padding: 2px;
 }
 
-.lectures {}
+.lectures {
+}
 
 .lecture {
-  display: flex;
-  justify-content: space-between;
+  background: white;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  align-items: center;
   gap: 20px;
   font-size: 20px;
   margin-bottom: 5px;
@@ -105,6 +161,7 @@ export default {
   font-size: 20px;
   background: transparent;
   border-bottom: 1px dotted black;
+  width: min-content;
 }
 
 .lecture__info {

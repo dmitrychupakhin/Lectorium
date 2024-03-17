@@ -34,7 +34,7 @@
         height=""
         alt=""
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a48"
-        class="header-homepage_image _4"
+        class="header-homepage_image _3"
       />
       <img
         src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e446e079c4846858f_illustration-header%234.webp"
@@ -42,7 +42,7 @@
         width="80"
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4b"
         alt=""
-        class="header-homepage_image _5"
+        class="header-homepage_image _4"
       />
       <img
         src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e26f4aca4c00350b8_illustration-header%233.webp"
@@ -50,7 +50,7 @@
         width="80"
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4c"
         alt=""
-        class="header-homepage_image _6"
+        class="header-homepage_image _5"
       />
       <img
         src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64ec817a2a3121cc181bd961_illustration-paper.png"
@@ -58,52 +58,7 @@
         width="100"
         alt=""
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4d"
-        class="header-homepage_image _7"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a283f5f37f9bee2080f_illustration-house-of-papers.webp"
-        loading="lazy"
-        width="230"
-        alt=""
-        class="header-homepage_image _9"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e473da5a9cb221a3780c37_illustration-header%231.webp"
-        loading="lazy"
-        width="230"
-        alt=""
-        class="header-homepage_image _8"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a27b00b97ccab1517c6_illustration-paper-pile.webp"
-        loading="lazy"
-        height="100"
-        alt=""
-        class="header-homepage_image _10"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c423707e5fdc70b7a6d_illustration-paper-pile%231.webp"
-        loading="lazy"
-        width="200"
-        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a50"
-        alt=""
-        class="header-homepage_image _11"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c42b00b97ccab17891e_illustration-paper-pile%232.webp"
-        loading="lazy"
-        width="200"
-        alt=""
-        data-w-id="4cd07e59-88e8-9c7a-e6c4-e3629d019184"
-        class="header-homepage_image _12"
-      />
-      <img
-        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a275645561b96e49e5d_illustration-paper-float.webp"
-        loading="lazy"
-        width="200"
-        alt=""
-        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4e"
-        class="header-homepage_image _13"
+        class="header-homepage_image _6"
       />
       <img
         src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22e26f4aca4c00350b8_illustration-header%233.webp"
@@ -111,7 +66,7 @@
         width="80"
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4c"
         alt=""
-        class="header-homepage_image _14"
+        class="header-homepage_image _7"
       />
       <img
         src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e4a22eda07c7db7a12d570_illustration-header%237.webp"
@@ -120,7 +75,61 @@
         height=""
         alt=""
         data-w-id="683468e9-9494-cf71-1d53-9cdb09014a48"
-        class="header-homepage_image _15"
+        class="header-homepage_image _8"
+      />
+      <img
+        src="https://cdn0.iconfinder.com/data/icons/marketing-essential/48/v-17-4096.png"
+        loading="lazy"
+        width="115"
+        height=""
+        alt=""
+        class="header-homepage_image _9"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c423707e5fdc70b7a6d_illustration-paper-pile%231.webp"
+        loading="lazy"
+        width="90"
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a50"
+        alt=""
+        class="header-homepage_image _10"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a283f5f37f9bee2080f_illustration-house-of-papers.webp"
+        loading="lazy"
+        width="220"
+        alt=""
+        class="header-homepage_image _11"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e473da5a9cb221a3780c37_illustration-header%231.webp"
+        loading="lazy"
+        width="225"
+        alt=""
+        class="header-homepage_image _12"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84c42b00b97ccab17891e_illustration-paper-pile%232.webp"
+        loading="lazy"
+        width="280"
+        alt=""
+        data-w-id="4cd07e59-88e8-9c7a-e6c4-e3629d019184"
+        class="header-homepage_image _13"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a275645561b96e49e5d_illustration-paper-float.webp"
+        loading="lazy"
+        width="200"
+        alt=""
+        data-w-id="683468e9-9494-cf71-1d53-9cdb09014a4e"
+        class="header-homepage_image _14"
+      />
+      <img
+        src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/64e84a27b00b97ccab1517c6_illustration-paper-pile.webp"
+        loading="lazy"
+        height="130"
+        alt=""
+        class="header-homepage_image _16"
+        data-v-9ea40744=""
       />
       <div class="display-info">
         <div class="logo">Личный кабинет</div>
@@ -138,6 +147,438 @@
       <div v-if="$store.state.isTeacher" class="lecture-title">Лекции</div>
       <div v-else class="lecture-title">Сохраненые лекции</div>
       <div class="listLect-grid">
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
+        <div class="lecture">
+          <div class="lecture__title">Хуц</div>
+          <div class="lecture__info">
+            <div class="lecuture__autor">Dmitry</div>
+            <div class="lecture__course">Программирование</div>
+            <div class="lecture__data">27.42.4200</div>
+          </div>
+          <button class="deleteLect">Удалить</button>
+        </div>
         <div class="lecture">
           <div class="lecture__title">Хуц</div>
           <div class="lecture__info">
@@ -165,6 +606,11 @@ export default {
   top: 50%;
   left: 50%;
 }
+.header-homepage_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 .header-homepage_image._1 {
   top: 25%;
   left: 0%;
@@ -175,56 +621,67 @@ export default {
 }
 .header-homepage_image._3 {
   top: 15%;
-  left: 43%;
+  left: 25%;
 }
 .header-homepage_image._4 {
   top: 15%;
-  left: 25%;
-}
-.header-homepage_image._5 {
-  top: 15%;
   left: 70%;
 }
-.header-homepage_image._6 {
+.header-homepage_image._5 {
   top: 20%;
   left: 80%;
 }
-.header-homepage_image._7 {
+.header-homepage_image._6 {
   top: 28%;
   left: 89%;
 }
-.header-homepage_image._8 {
-  top: 57%;
-  left: 5%;
-}
-.header-homepage_image._9 {
-  top: 55%;
-  left: 80%;
-}
-.header-homepage_image._10 {
-  top: 83%;
-  left: 18%;
-}
-.header-homepage_image._11 {
-  top: 70%;
-  left: 27%;
-}
-.header-homepage_image._12 {
-  top: 80%;
-  left: 45%;
-}
-.header-homepage_image._13 {
-  top: 70%;
-  left: 65%;
-}
-.header-homepage_image._14 {
+.header-homepage_image._7 {
   top: 32%;
   left: 10%;
 }
-.header-homepage_image._15 {
+.header-homepage_image._8 {
   top: 27%;
   left: 72%;
 }
+.header-homepage_image._9 {
+  top: 32%;
+  left: 80%;
+}
+.header-homepage_image._10 {
+  top: 28%;
+  left: 20%;
+}
+.header-homepage_image._11 {
+  position: fixed;
+  top: 58%;
+  left: 84%;
+  opacity: 0.4;
+}
+.header-homepage_image._12 {
+  position: fixed;
+  top: 58%;
+  left: 1%;
+  opacity: 0.4;
+}
+.header-homepage_image._13 {
+  position: fixed;
+  top: 80%;
+  left: 41%;
+  opacity: 0.4;
+}
+.header-homepage_image._14 {
+  position: fixed;
+  top: 72%;
+  left: 68%;
+  opacity: 0.4;
+}
+.header-homepage_image._16 {
+  position: fixed;
+  top: 79%;
+  left: 18%;
+  opacity: 0.4;
+}
+
 .userPage {
   margin: 0px 10%;
   background: white;

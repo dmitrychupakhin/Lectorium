@@ -15,27 +15,31 @@
     </header>
     <div class="content" v-if="!isLecturesLoading">
       <div class="search-navbar">
-        <select class="select">
+        <select id="facultet" class="select">
           <option selected value="">Факультет</option>
-          <option v-for="facultet in facultes.data" :key="facultet.id" value="">
+          <option
+            v-for="facultet in facultes.data"
+            :key="facultet.id"
+            :value="facultet.id"
+          >
             {{ facultet.title }}
           </option>
         </select>
-        <select class="select">
+        <select id="teacher" class="select">
           <option selected value="">Преподаватель</option>
-          <option v-for="course in teachers.data" :key="course.id" value="">
+          <option v-for="course in teachers.data" :key="course.id" :value="course.id">
             {{ course.first_name }}
             {{ course.last_name }}
           </option>
         </select>
-        <select class="select">
+        <select id="course" class="select">
           <option selected value="">Курс</option>
-          <option v-for="course in courses.data" :key="course.id" value="">
+          <option v-for="course in courses.data" :key="course.id" :value="course.id">
             {{ course.title }}
           </option>
         </select>
-        <input placeholder="Поиск" class="input" />
-        <button class="searchButton">Поиск</button>
+        <input id="input" placeholder="Поиск" class="input" />
+        <button @click="search" class="searchButton">Поиск</button>
       </div>
       <div class="lectures">
         <div class="lecture" v-for="lecture in lectures.data" :key="lecture.id">
@@ -76,6 +80,27 @@ export default {
     };
   },
   methods: {
+    async search() {
+      try {
+        this.isLecturesLoading = true;
+        const response = await axios.get("http://127.0.0.1:8000/api/v1/lecture/", {
+          params: {
+            title_lect: document.getElementById("input").value,
+            limit: 1000,
+            teacher: document.getElementById("teacher").value,
+            faculty: document.getElementById("facultet").value,
+            course: document.getElementById("course").value,
+          },
+        });
+        this.lectures = response.data;
+
+        console.log(this.lectures);
+      } catch (e) {
+        alert("Ошибка");
+      } finally {
+        this.isLecturesLoading = false;
+      }
+    },
     async fetchLectures() {
       try {
         this.isLecturesLoading = true;

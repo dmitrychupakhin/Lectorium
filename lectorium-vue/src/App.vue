@@ -1,6 +1,6 @@
 <template>
   <my-navbar></my-navbar>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -80,9 +80,9 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
+/*ul li {
   list-style: none;
-}
+}*/
 
 img {
   vertical-align: top;

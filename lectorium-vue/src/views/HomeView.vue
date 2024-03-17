@@ -136,23 +136,31 @@
       <div class="content-title">Сайт с лекциями</div>
       <div class="content-text">
         <div class="first-text-data">
-          <span class="first-line">Добро пожаловать в Lectorium.</span> Наш сервис
-          предоставляет удобную платформу для изучения и обмена лекциями. Студенты могут
-          ознакомиться с различными материалами, а преподаватели имеют возможность
-          делиться своими наработками как с учащимися, так и с коллегами.
+          Добро пожаловать в Lectorium. Наш сервис предоставляет удобную платформу для
+          изучения и обмена лекциями. Студенты могут ознакомиться с различными
+          материалами, а преподаватели имеют возможность делиться своими наработками как с
+          учащимися, так и с коллегами.
         </div>
         <div class="text-container">
-          - Быстрый и удобный поиск лекций по факультету, курсу и преподавателю.
-          <br />-Уникальная возможность для преподавателей добавлять материалы в текстовом
-          и аудио форматах. Кроме того, преподаватели могут в любое время редактировать
-          свои лекции. <br />- Студенты получают доступ к качественной информации от
-          преподавателей. Если у них возникают вопросы, они могут обратиться за помощью к
-          GPT-модели. Модель анализирует все доступные лекции и предоставляет ответы на
-          заданные вопросы.
+          <ul>
+            <li>Быстрый и удобный поиск лекций по факультету, курсу и преподавателю.</li>
+
+            <li>
+              Уникальная возможность для преподавателей добавлять материалы в текстовом и
+              аудио форматах. Кроме того, преподаватели могут в любое время редактировать
+              свои лекции.
+            </li>
+
+            <li>
+              Студенты получают доступ к качественной информации от преподавателей. Если у
+              них возникают вопросы, они могут обратиться за помощью к GPT-модели. Модель
+              анализирует все доступные лекции и предоставляет ответы на заданные вопросы.
+            </li>
+          </ul>
         </div>
         <div class="second-text-data">
-          <span class="second-line"></span>Мы стремимся сделать процесс обучения более
-          эффективным и доступным для всех пользователей Lectorium.
+          Мы стремимся сделать процесс обучения более эффективным и доступным для всех
+          пользователей Lectorium.
         </div>
       </div>
     </div>
@@ -198,8 +206,20 @@ export default {
         });
       this.$store.state.isSuperUser = response;
     }
+    this.getStateFromCookie();
   },
   methods: {
+    getStateFromCookie() {
+      const userData = this.$cookies.get("state");
+      this.$store.commit("setVKID", userData.VKID);
+      this.$store.commit("setAccessToken", userData.accessToken);
+      this.$store.commit("setAvatarURL", userData.avatarURL);
+      this.$store.commit("setFirstName", userData.firstName);
+      this.$store.commit("setIsAuth", userData.isAuth);
+      this.$store.commit("setIsSuperUser", userData.isSuperUser);
+      this.$store.commit("setIsTeacher", userData.isTeacher);
+      this.$store.commit("setLastName", userData.lastName);
+    },
     saveStateToCookie() {
       this.$cookies.set("state", JSON.stringify(this.$store.state));
     },

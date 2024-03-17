@@ -19,6 +19,8 @@ class LectureSerializer(serializers.ModelSerializer):
     faculty = serializers.CharField(source='faculty.title')
     cource = serializers.CharField(source='cource.title')
     lecturer = serializers.SerializerMethodField()
+    #faculty = f"{serializers.CharField(source='faculty.title')}"
+    #cource = f"{serializers.CharField(source='cource.title')}"
     class Meta:
         model = Lecture
         fields = ('id', 'title_lect', 'faculty','lecturer','cource','content')

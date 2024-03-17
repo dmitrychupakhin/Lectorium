@@ -44,14 +44,14 @@ class LectureListCreateView(generics.ListCreateAPIView):
         if title_lect:
             queryset = queryset.filter(title_lect=title_lect)
         if teacher:
-            teacher_instance = Account.objects.filter(vk_id=teacher).first()
+            teacher_instance = Account.objects.filter(id=teacher).first()
             queryset = queryset.filter(lecturer=teacher_instance)
         if cource:
-            course_instance = Course.objects.filter(title=cource).first()
+            course_instance = Course.objects.filter(id=cource).first()
             if course_instance:
                 queryset = queryset.filter(cource=course_instance)
         if faculty:
-            faculty_instance = Faculty.objects.filter(title=faculty).first()
+            faculty_instance = Faculty.objects.filter(id=faculty).first()
             if faculty_instance:
                 queryset = queryset.filter(faculty=faculty_instance)
         if date:

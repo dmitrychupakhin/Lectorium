@@ -6,6 +6,7 @@ urlpatterns = [
     path('lecture/<int:id>/', LectureRetrieveUpdateDestroyView.as_view() ),
     path('lectures/courses/', CourseListCreateView.as_view() ),
     path('lectures/facultes/', FacultyListCreateView.as_view() ),
+    path('lectures/allteachers/', TeachersListView.as_view() ),
     path('lectures/courses/<int:id>/', CourseRetrieveUpdateDestroyView.as_view() ),
     path('lectures/facultes/<int:id>/', FacultyRetrieveUpdateDestroyView.as_view() ),
     #path('lecture/download/<int:pk>/', download_file, name='download_file'),

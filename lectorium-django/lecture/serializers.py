@@ -5,14 +5,14 @@ from account.serializers import *
 class FacultySerializer(serializers.ModelSerializer):
     class Meta:
         model = Faculty
-        fields = ('id', 'title')
-        read_only_fields = ('id',)
+        fields = ('title',)
+        #read_only_fields = ('id',)
         
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
-        fields = ('id', 'title')
-        read_only_fields = ('id',)
+        fields = ('title',)
+        #read_only_fields = ('id',)
         
 class LectureSerializer(serializers.ModelSerializer):
     class Meta:

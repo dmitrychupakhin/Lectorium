@@ -78,7 +78,15 @@ class FacultyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Faculty.objects.all()
     serializer_class = FacultySerializer
     lookup_field = 'id'
-    
+
+class TeachersListView(generics.ListCreateAPIView):
+    serializer_class = AccountSerializer
+    lookup_field = 'id'
+
+    def get_queryset(self):
+        queryset = Account.objects.filter(is_Prepod=True)
+        return queryset
+
 class CourseListCreateView(generics.ListCreateAPIView):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer

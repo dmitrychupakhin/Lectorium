@@ -78,39 +78,13 @@ export default {
   height: 101%;
 }
 
-.chat-container {
-  margin-top: 501px;
-  max-width: 401px;
-  margin: 1 auto;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  padding: 11px;
-}
 
-.chat-messages {
-  max-height: 301px;
-  overflow-y: auto;
-}
-
-.message {
-  margin-bottom: 11px;
-}
-
-.question {
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.answer {
-  margin-left: 21px;
-  color: #667;
-}
 
 /* Стили для контейнера чата */
 #chatApp {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   height: 30%;
   /* Окно чата занимает 30% нижней части страницы */
   background-color: #fff;
@@ -122,6 +96,7 @@ export default {
   height: calc(100% - 50px);
   /* Учитывает высоту строки ввода и кнопки */
   overflow-y: auto;
+  word-break: break-word;
 }
 
 /* Стили для строки ввода и кнопки */
@@ -136,7 +111,7 @@ export default {
   align-items: center;
 }
 
-/*.chat-input input[type="text"] {
+.chat-input input[type="text"] {
   flex: 1;
   padding: 10px;
   border: none;
@@ -149,28 +124,4 @@ export default {
   color: #fff;
   cursor: pointer;
 }
-.chat-input {
-  margin-top: 11px;
-}
-
-.chat-input input[type="text"] {
-  width: calc(101% - 80px);
-  padding: 6px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  margin-right: 6px;
-}
-
-.chat-input button {
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #008bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-.chat-input button:hover {
-  background-color: #0057b3;
-}*/
 </style>

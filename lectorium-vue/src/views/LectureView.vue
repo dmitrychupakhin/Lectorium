@@ -42,13 +42,17 @@ export default {
     sendMessage() {
       if (!this.newMessage) return;
 
-      // Добавляем вопрос в чат
-      this.messages.push({ question: this.newMessage, answer: '' });
+
+      // Генерируем ответ
+      const botResponse = 'Bot: ' + `Hello, ${this.newMessage}!`;
+
+      // Добавляем ответ в чат
 
       // Отправляем запрос на сервер и получаем ответ
       // Здесь должен быть код отправки запроса
       // ...
 
+      this.messages.push({ question: 'You: ' + this.newMessage, answer: botResponse });
       // Очищаем строку ввода
       this.newMessage = '';
     }

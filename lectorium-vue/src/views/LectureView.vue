@@ -89,52 +89,37 @@ export default {
 }
 
 
-
-
-
-
 #chatApp {
   position: fixed;
   bottom: 0;
   width: 80%;
   height: 30%;
 
-  /* Окно чата занимает 30% нижней части страницы 
   background-color: #fff;
-  border-top: 1px solid #ccc;*/
+  border-top: 1px solid #ccc;
 }
 
-/* Стили для контейнера с сообщениями */
 .chat-messages {
   max-height: 150px;
-  /* Максимальная высота контейнера с сообщениями */
   overflow-y: auto;
-  /* Добавляет полосу прокрутки, если сообщения не помещаются */
   padding: 10px;
 }
 
-/* Стили для блока с сообщением */
 .message {
   margin-bottom: 10px;
   padding: 5px 10px;
   border-radius: 5px;
   word-wrap: break-word;
-  /* Перенос слов на новую строку */
 }
 
-/* Стили для сообщений пользователя */
 .user {
   background-color: #e2f1f8;
-  /* Цвет фона сообщений пользователя */
 }
 
-/* Стили для сообщений бота */
 .bot {
   background-color: #f0f0f0;
-  /* Цвет фона сообщений бота */
 }
 
-/* Стили для строки ввода и кнопки */
 .chat-input {
   margin-top: 10px;
 }
@@ -159,49 +144,4 @@ export default {
 .chat-input button:hover {
   background-color: #0056b3;
 }
-
-/* Стили для контейнера чата 
-#chatApp {
-  position: fixed;
-  bottom: 0;
-  width: 80%;
-  height: 30%;
-  /* Окно чата занимает 30% нижней части страницы 
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-
-/* Стили для контейнера с сообщениями 
-.chat-messages {
-  height: calc(100% - 50px);
-  /* Учитывает высоту строки ввода и кнопки 
-  overflow-y: auto;
-  word-break: break-word;
-}
-
-/* Стили для строки ввода и кнопки 
-.chat-input {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #f7f7f7;
-  border-top: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-}
-
-.chat-input input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: none;
-}
-
-.chat-input button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}*/
 </style>
